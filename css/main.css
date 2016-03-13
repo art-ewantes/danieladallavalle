@@ -78,7 +78,7 @@ header {
   padding: 0px;
   position: relative; }
 
-.go_to_top {
+.go-to-top {
   font-size: 12px;
   height: 1px;
   position: relative;
@@ -89,10 +89,10 @@ header {
   z-index: 1;
   margin-top: 100px; }
 
-.go_to_top a:hover {
+.go-to-top a:hover {
   color: #666; }
 
-.go_to_top a {
+.go-to-top a {
   display: block;
   position: relative;
   width: 150px;
@@ -105,12 +105,12 @@ header {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-.go_to_top span {
+.go-to-top span {
   position: relative;
   top: 3px;
   margin-right: 5px; }
 
-.go_to_top i {
+.go-to-top i {
   vertical-align: middle;
   font-size: 18px; }
 
