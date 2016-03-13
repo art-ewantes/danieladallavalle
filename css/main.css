@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 ol, ul {
   list-style: none; }
@@ -507,3 +508,38 @@ header {
   border-top: 1px solid #000;
   display: block;
   padding-bottom: 30px; }
+=======
+/*
+Error: The line was indented 2 levels deeper than the previous line.
+        on line 151 of D:\Git\danieladallavalle\css\sass\main.sass
+
+146: 		position: relative
+147: 		width: 150px
+148: 		margin: 0 auto
+149: 		color: #888
+150: <<<<<<< HEAD
+151: 		font-family: "GibsonRegular"
+152: .go-to-top a
+153: 	-webkit-transition: all .3s ease-in-out
+154: 	-moz-transition: all .3s ease-in-out
+155: 	-ms-transition: all .3s ease-in-out
+156: 	-o-transition: all .3s ease-in-out
+
+Backtrace:
+D:\Git\danieladallavalle\css\sass\main.sass:151
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:509:in `tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:404:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: The line was indented 2 levels deeper than the previous line.\A         on line 151 of D:\Git\danieladallavalle\css\sass\main.sass\A \A 146: 		position: relative\A 147: 		width: 150px\A 148: 		margin: 0 auto\A 149: 		color: #888\A 150: <<<<<<< HEAD\A 151: 		font-family: \"GibsonRegular\"\A 152: .go-to-top a\A 153: 	-webkit-transition: all .3s ease-in-out\A 154: 	-moz-transition: all .3s ease-in-out\A 155: 	-ms-transition: all .3s ease-in-out\A 156: 	-o-transition: all .3s ease-in-out"; }
+>>>>>>> parent of 1e06c48... проблема гит
