@@ -13,7 +13,21 @@ body {
   font-weight: normal;
   min-width: 320px;
   position: relative;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialised;
+  font-family: "GibsonRegular";
+  font-size: 13px; }
+
+.smaller .header_bar .home-icon {
+  height: 45px;
+  width: auto; }
+
+.smaller .header_bar .header_bg {
+  background: rgba(255, 255, 255, 0.85);
+  transition: background 0 ease-in-out;
+  -webkit-transition: background 0 ease-in-out;
+  -moz-transition: background 0 ease-in-out;
+  -ms-transition: background 0 ease-in-out;
+  -o-transition: background 0 ease-in-out; }
 
 header {
   position: fixed;
@@ -58,13 +72,18 @@ header {
 
 .header_social_icons {
   float: right; }
+  .header_social_icons #top-bar-separator {
+    padding: 5px 10px 5px 15px; }
+  .header_social_icons a {
+    color: #666; }
+  .header_social_icons a:hover {
+    color: #bbb; }
   .header_social_icons .social_icons_container {
     position: relative;
-    margin-top: 7px;
+    margin-top: 5px;
     text-align: right; }
     .header_social_icons .social_icons_container i {
       font-size: 17px;
-      color: #666;
       padding-left: 10px;
       vertical-align: middle;
       -webkit-transition: all 0.3s ease-in-out;
@@ -72,6 +91,32 @@ header {
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
+
+.header_bar {
+  position: relative;
+  width: 100%; }
+  .header_bar .header_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-bottom: solid 1px #e1e1e1; }
+  .header_bar .logo_sidebar {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+  .header_bar .header_logo {
+    position: relative;
+    display: inline-block; }
+    .header_bar .header_logo img {
+      height: 80px;
+      width: auto;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      display: block;
+      position: relative; }
 
 #footer {
   background: #000;
@@ -98,7 +143,6 @@ header {
   width: 150px;
   margin: 0 auto;
   color: #888;
-  font-family: "GibsonRegular";
   webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
