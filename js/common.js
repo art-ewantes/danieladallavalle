@@ -70,7 +70,6 @@ if ( typeof define === 'function' && define.amd ) {
 
 //header_resize_script
 $(document).ready(function() {
-<<<<<<< HEAD
 var WPWdropMenu = function(){
 	var $ = jQuery;
 	var dropMenus = $(".wpw-drop-menu-cross");
@@ -114,7 +113,7 @@ var WPWdropMenu = function(){
 	});
 };
 	
-=======
+
 	function contentMarginTop(){
 		headerHeight = $("header").outerHeight(true);
 
@@ -136,13 +135,12 @@ var WPWdropMenu = function(){
         });
     }
     window.onload = init();
-   window.onload =contentMarginTop();
+   window.onload = contentMarginTop();
 
 		//header_resize_end
->>>>>>> origin/master
 	
 });
-
+ // $('').mouseover(function()
 $(window).load(function() { 
 
 });
