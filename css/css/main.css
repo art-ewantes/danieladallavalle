@@ -1,19 +1,106 @@
-body {
-  font-family: "Raleway", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.42857;
-  -webkit-font-smoothing: antialised; }
+a {
+  text-decoration: none;
+  color: #020202; }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: red; }
-
-body input:required:valid,
-body textarea:required:valid {
-  color: green; }
+select:focus {
+  outline: none; }
 
 .hidden {
   display: none; }
+
+body {
+  font-weight: normal;
+  min-width: 320px;
+  position: relative;
+  -webkit-font-smoothing: antialised; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  text-align: center; }
+  header a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+
+.header_social {
+  background: #eee;
+  text-align: right;
+  position: relative;
+  z-index: 20;
+  color: #666;
+  height: 30px; }
+
+.header_lang {
+  height: 20px;
+  float: right; }
+  .header_lang select {
+    -moz-appearance: none;
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    background: #eee url("../images/arrow-down.png") no-repeat 90% center;
+    width: 60px;
+    text-indent: 0.01px;
+    text-overflow: "";
+    color: #666;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    height: 30px;
+    letter-spacing: 1px; }
+
+.header_social_icons {
+  float: right; }
+  .header_social_icons .social_icons_container {
+    position: relative;
+    margin-top: 7px;
+    text-align: right; }
+    .header_social_icons .social_icons_container i {
+      font-size: 17px;
+      color: #666;
+      padding-left: 10px;
+      vertical-align: middle;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+
+#footer {
+  background: #000;
+  padding: 0px;
+  position: relative;
+  height: 100px; }
+
+.go_to_top {
+  font-size: 12px;
+  height: 1px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  top: 15px;
+  z-index: 1; }
+
+.go_to_top {
+  display: block;
+  position: relative;
+  width: 150px;
+  margin: 0 auto;
+  color: #888;
+  webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.go_to_top {
+  position: relative;
+  top: 3px;
+  margin-right: 5px; }
