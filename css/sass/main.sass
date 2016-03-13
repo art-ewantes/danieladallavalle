@@ -15,12 +15,23 @@ body
 	min-width: 320px
 	position: relative
 	-webkit-font-smoothing: antialised
-
+	font-family: "GibsonRegular"
+	font-size: 13px
 
 //общие стили конец
 
 
 //header begin
+.smaller .header_bar .home-icon
+	height: 45px
+	width: auto
+.smaller .header_bar .header_bg
+	background: rgba(255, 255, 255, 0.85)
+	transition: background 0 ease-in-out
+	-webkit-transition: background 0 ease-in-out
+	-moz-transition: background 0 ease-in-out
+	-ms-transition: background 0 ease-in-out
+	-o-transition: background 0 ease-in-out
 header
 	position: fixed
 	top: 0
@@ -28,6 +39,7 @@ header
 	width: 100%
 	z-index: 10
 	text-align: center
+
 	a
 		transition: all .3s ease-in-out
 		-webkit-transition: all .3s ease-in-out
@@ -60,14 +72,20 @@ header
 		height: 30px
 		letter-spacing: 1px
 .header_social_icons
+	#top-bar-separator
+		padding: 5px 10px 5px 15px
+
 	float: right
+	a
+		color: #666
+	a:hover
+		color: #bbb
 	.social_icons_container
 		position: relative
-		margin-top: 7px
+		margin-top: 5px
 		text-align: right
 		i
 			font-size: 17px
-			color: #666
 			padding-left: 10px
 			vertical-align: middle
 			-webkit-transition: all .3s ease-in-out
@@ -75,7 +93,34 @@ header
 			-ms-transition: all .3s ease-in-out
 			-o-transition: all .3s ease-in-out
 			transition: all .3s ease-in-out
-//header begin
+.header_bar
+	position: relative
+	width: 100%
+	.header_bg
+		position: absolute
+		width: 100%
+		height: 100%
+		background: #fff
+		border-bottom: solid 1px #e1e1e1
+	.logo_sidebar
+		position: absolute
+		right: 10px
+		top: 10px
+	.header_logo
+		position: relative
+		display: inline-block
+		img
+			height: 80px
+			width: auto
+			-webkit-transition: all 0.4s ease-in-out
+			-moz-transition: all 0.4s ease-in-out
+			-o-transition: all 0.4s ease-in-out
+			transition: all 0.4s ease-in-out
+			display: block
+			position: relative
+
+	
+//header end
 
 //footer begin
 #footer
@@ -102,6 +147,7 @@ header
 		width: 150px
 		margin: 0 auto
 		color: #888
+<<<<<<< HEAD
 		font-family: "GibsonRegular"
 .go-to-top a
 	-webkit-transition: all .3s ease-in-out
@@ -109,6 +155,13 @@ header
 	-ms-transition: all .3s ease-in-out
 	-o-transition: all .3s ease-in-out
 	transition: all .3s ease-in-out
+=======
+		webkit-transition: all .3s ease-in-out
+		-moz-transition: all .3s ease-in-out
+		-ms-transition: all .3s ease-in-out
+		-o-transition: all .3s ease-in-out
+		transition: all .3s ease-in-out
+>>>>>>> origin/master
 .go-to-top
 	span
 		position: relative
