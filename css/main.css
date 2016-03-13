@@ -10,6 +10,9 @@ ul {
   margin: 0;
   padding: 0; }
 
+aside {
+  display: block; }
+
 select:focus {
   outline: none; }
 
@@ -348,14 +351,16 @@ header {
   display: block;
   float: left;
   width: 75%;
-  padding: 41px 0 34px 41px;
+  padding: 41px 0 0px 41px;
   letter-spacing: 1px;
   font-size: 11px; }
+
+.footer-nav-menu .three {
+  margin-left: 5%; }
 
 .footer-nav-menu li {
   display: block;
   float: left;
-  margin-bottom: 20px;
   width: 29.33333%; }
 
 .footer-nav-menu li:first-child {
@@ -390,14 +395,16 @@ header {
 .footer-menu a:hover {
   color: #020202; }
 
-.wpw-drop-menu-cross .sub-menu li {
-  padding-left: 14px; }
+.wpw-drop-menu-cross {
+  margin-left: 5%; }
+  .wpw-drop-menu-cross .sub-menu li {
+    padding-left: 14px; }
 
 .footer-nav-menu .sub-menu a:hover {
   color: #000; }
 
 .footer-nav-menu .sub-menu .current_page_item a {
-  font-family: "gibsonregular"; }
+  font-family: "GibsonRegular"; }
 
 .wpw-drop-menu-cross .sub-menu li {
   padding-left: 14px; }
@@ -455,21 +462,48 @@ header {
 .show-submenu ul {
   height: auto; }
 
-#mobile-menu-box .sub-menu .sub-menu .sub-menu li {
-  padding: 10px !important; }
+.footer-right {
+  display: block;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "GibsonRegular";
+  padding: 41px 0 34px 0px;
+  float: right;
+  width: 25%;
+  color: #000; }
 
-#mobile-menu-box .sub-menu .sub-menu .sub-menu {
-  display: block !important;
-  padding-left: 10px; }
+.footer-right ul {
+  margin-bottom: 30px; }
 
-#mobile-menu-box .sub-menu .sub-menu li {
-  padding-bottom: 0px !important; }
+.footer-right li {
+  font-size: 11px;
+  padding-bottom: 18px;
+  list-style-type: none; }
 
-#mm-toggle-btn .fa-chevron-up {
-  display: none; }
+.footer-right li:last-child {
+  padding-bottom: 0px; }
 
-.mobile-menu-on #mm-toggle-btn .fa-bars {
-  display: none; }
+.footer-right i {
+  font-size: 22px;
+  padding: 0 10px 0 0px; }
 
-.mobile-menu-on #mm-toggle-btn .fa-chevron-up {
-  display: inline; }
+.footer-right a:hover {
+  opacity: 0.5; }
+
+.footer-right a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.footer-right .follow-us {
+  font-size: 11px;
+  display: block;
+  margin-bottom: 5px; }
+
+.footer-border {
+  width: 50%;
+  border-top: 1px solid #000;
+  display: block;
+  padding-bottom: 30px; }
