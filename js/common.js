@@ -146,7 +146,6 @@ if ( typeof define === 'function' && define.amd ) {
 		//header_resize_end
 	
 
-$('#main-menu .nav-menu>li').mouseover(function(itemIndex))
 $("#main-menu .nav-menu>li").each(function(itemIndex){
 		var menuItem = $(this);
 		var subMenu = $(">.sub-menu", menuItem);
