@@ -43,7 +43,6 @@ header
 	width: 100%
 	z-index: 10
 	text-align: center
-
 	a
 		transition: all .3s ease-in-out
 		-webkit-transition: all .3s ease-in-out
@@ -97,7 +96,7 @@ header
 			-ms-transition: all .3s ease-in-out
 			-o-transition: all .3s ease-in-out
 			transition: all .3s ease-in-out
-#header-bar
+.header_bar
 	position: relative
 	width: 100%
 	.header_bg
@@ -122,179 +121,176 @@ header
 			transition: all 0.4s ease-in-out
 			display: block
 			position: relative
-
-#main-menu
+//ddmenu begin
+#containerrr
+	position: absolute
+li.dd_menu_title:not(:last-child):after
+	content: "|"
+	color: #bbb
+	margin: 0px 8px 0 27px
+	padding-bottom: 2px
+	padding-top: 2px
+#ddmenu
 	display: block
-	position: relative
 	text-align: center
 	text-transform: uppercase
 	font-size: 11px
-	letter-spacing: 1px
 	padding-bottom: 10px
 	ul
 		border-top: 1px solid #e1e1e1
 		padding-top: 10px
+		margin: 0 auto
+		text-align: center
+		width: 100%
+		display: inline-block
+		list-style: none
+		position: relative
 	li
 		display: inline-block
 		margin: 0px 8px
 		padding-bottom: 2px
 		padding-top: 2px
-		a
-			padding: 4px 8px
-#header .nav-menu, #header a
-	position: relative
-#header-bar .submenu-box
-	position: absolute
-	width: 100%
-	padding: 0px
-	-webkit-transition-duration: 0.3s
-	-moz-transition-duration: 0.3s
-	-ms-transition-duration: 0.3s
-	-o-transition-duration: 0.3s
-	transition-duration: 0.3s
-	bottom: 0px
-	height: 0px
-	overflow: hidden
-	background: #202020
-	background: rgba(20, 20, 20, 0.9)
-#header-bar .submenu-active
-	height: 38px
-	bottom: -38px
-#main-menu li
-	position: relative
+		position: relative
+		vertical-align: middle
+		outline: none
+		-moz-user-select: none
+		-webkit-user-select: none
+		-ms-user-select: none
+	.full-width
+		position: static
+	.over
+		&.no-sub
+	.top-heading
+		color: inherit
+		text-decoration: none
+		display: inline-block
+		outline: 0
+		cursor: pointer
+	.dropdown
+		width: auto
+		left: 0px
+		padding: 0
+		margin: 0
+		display: none
+		position: absolute
+		overflow: hidden
+		top: 100%
+	.full-width .dropdown
+		width: 100%
+		padding: 0
+		margin: 0
+	.right-aligned
+		left: auto
+		right: 0px
+	.over .dropdown
+		display: block
+	.dd-inner
+		text-align: center
+		background-color: #FFF
+		white-space: nowrap
+		font-size: 13px
+	ul ul
+		margin: 0
+		text-align: left
+		width: auto
+		display: block
+		position: static
+		border: none	
+		padding-top: 25px
+		padding-bottom: 15px
 
+		li
+			margin: 0
+			display: block
+			position: static
+	.dropdown a
+		line-height: 1
+		text-decoration: none
+		&:hover, &:focus
+			text-decoration: none
+	.column
+		text-align: left
+		vertical-align: top
+		display: inline-block
+		*display: inline
+		*zoom: 1
+		white-space: normal
+		width: auto
+		min-width: 200px
+	.dd-inner ul:last-child
+		border-right: none
+	h3
 
-#header-bar .vertical-menu .sub-menu li 
-	display: inline-block
-	margin-right: 60px
-	margin-bottom: 10px
-	font-size: 11px
-	letter-spacing: 1px
-#header-bar .sub-menu li a 
-	color: #fff
+	div.column h3
+		text-transform: uppercase
 
-
-#header-bar .sub-menu li a:hover
-	text-decoration: underline
-	-webkit-transition: none
-	-moz-transition: none
-	-o-transition: none
-	transition: none
-
-
-
-#header-bar .vertical-menu ul .sub-menu
-	float: none
-	padding-top: 5px
-	padding-bottom: 5px
-	font-size: 90%
-
-.my-submenu-active .fa-caret-down
-	display: block
-
-#header .menu-item .fa-caret-down
-	position: absolute
-	display: none
-	bottom: -22px
-	font-size: 20px
-	text-align: center
-	width: 100%
-	color: #fff
-#header-bar .vertical-menu 
-	height: auto
-
-
-#header-bar .submenu-box-container 
-	position: absolute
-	bottom: 0px
-	text-align: left
-
-
-#header-bar .vertical-menu ul li 
-	display: block 
-	text-align: left
-	float: none
-
-
-#header-bar .vertical-menu .sub-menu 
-	position: relative
-	display: block
-	float: left
-	padding-top: 25px
-	padding-bottom: 15px
-
-.parent-submenu li 
-	display: inline-block
-	margin-right: 10px
-	position: relative
-
-.parent-submenu 
-	position: relative
-	width: 100%
-	padding: 12px 0px 12px 15px
-	text-align: left
-	background: #fff
-	text-transform: uppercase
-	font-size: 10px
-	z-index: 1
-	letter-spacing: 1px
-	border-bottom: solid 1px #e1e1e1
-
-
-.parent-submenu a 
-	color: #666
-
-
-.alternate-menu 
-	background: #e5e5e5
-	border-bottom: none
-
-
-.window-scrolled .alternate-menu 
-	background: #e5e5e5
-	background: rgba(255, 255, 255, 0.85)
-
-
-.alternate-menu a 
-	color: #333 
-	padding: 2px 5px
-
-
-.alternate-menu a:hover 
-	background: #fff
-
-
-
-
-
-
-.parent-submenu .sub-menu 
+#ddmenuLink, #ddmenu .menu-icon
 	display: none
 
-
-.parent-submenu-white .menu-item-title 
-	color: #333
-
-
-.parent-submenu-white .current-menu-item a 
-	color: #fff
-
-
-.menu-item-title
-	color: #333
-	padding-right: 15px
-
-
-.menu-item-title span
-	font-size: 17px
-	position: absolute
-	right: 0px
-	top: -7px
-
-
-	
-
-
+@media only screen and (max-width: 480px)
+	#ddmenu
+		.column.mayHide
+			display: none
+		ul
+			width: 100%
+			display: none
+			border-radius: 0
+		li
+			position: relative
+			display: block
+			font-size: 20px
+			text-align: left
+		.full-width
+			position: relative
+		.dropdown
+			position: relative
+			*top: auto
+			border: none
+			border-radius: 0
+			box-shadow: none
+		.offset300
+			left: 0
+		.full-width .dropdown
+			width: auto
+		.dd-inner
+			margin: 0
+			background: none
+			text-align: left
+		.column
+			width: auto
+			padding: 0
+			border: none
+			display: block
+		.menu-icon
+			font-size: 32px
+			display: block
+			position: relative
+			width: 40px
+			height: 36px
+			text-align: center
+			cursor: pointer
+			-moz-user-select: none
+			-webkit-user-select: none
+			background-color: #eee
+			border-radius: 3px
+			margin-bottom: 6px
+			margin-left: auto
+			margin-right: 11px
+			&::before
+				content: ""
+				position: absolute
+				top: 0.25em
+				left: 4px
+				width: 1em
+				height: 0.125em
+				border-top: 0.375em double #333
+				border-bottom: 0.125em solid #333
+				box-sizing: content-box
+		.menu-icon-active
+			background-color: #333
+			&::before
+				border-color: #eee
+//ddmenuend
 //header end
 
 //footer begin
@@ -322,7 +318,6 @@ header
 		width: 150px
 		margin: 0 auto
 		color: #888
-<<<<<<< HEAD
 		font-family: "GibsonRegular"
 .go-to-top a
 	-webkit-transition: all .3s ease-in-out
@@ -330,13 +325,6 @@ header
 	-ms-transition: all .3s ease-in-out
 	-o-transition: all .3s ease-in-out
 	transition: all .3s ease-in-out
-=======
-		webkit-transition: all .3s ease-in-out
-		-moz-transition: all .3s ease-in-out
-		-ms-transition: all .3s ease-in-out
-		-o-transition: all .3s ease-in-out
-		transition: all .3s ease-in-out
->>>>>>> origin/master
 .go-to-top
 	span
 		position: relative
