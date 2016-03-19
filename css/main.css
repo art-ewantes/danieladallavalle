@@ -109,8 +109,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #fff;
-    border-bottom: solid 1px #e1e1e1; }
+    background: #fff; }
   .header_bar .logo_sidebar {
     position: absolute;
     right: 10px;
@@ -128,170 +127,79 @@ header {
       display: block;
       position: relative; }
 
-#containerrr {
-  position: absolute; }
-
-li.dd_menu_title:not(:last-child):after {
-  content: "|";
+.stick {
   color: #bbb;
-  margin: 0px 8px 0 27px;
-  padding-bottom: 2px;
-  padding-top: 2px; }
+  font-size: 14px;
+  display: inline;
+  position: relative; }
 
 #ddmenu {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0;
+  border-top: 1px solid #e1e1e1;
+  letter-spacing: 1px;
+  height: 39px;
+  line-height: 37px;
   display: block;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 11px;
-  padding-bottom: 10px; }
-  #ddmenu ul {
-    border-top: 1px solid #e1e1e1;
-    padding-top: 10px;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  outline: none;
+  text-align: center; }
+  #ddmenu .dd_item {
+    display: inline;
+    position: relative;
     list-style: none;
-    position: relative; }
-  #ddmenu li {
-    display: inline-block;
-    margin: 0px 8px;
-    padding-bottom: 2px;
-    padding-top: 2px;
-    position: relative;
-    vertical-align: middle;
-    outline: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none; }
-  #ddmenu .full-width {
-    position: static; }
-  #ddmenu .top-heading {
-    color: inherit;
-    text-decoration: none;
-    display: inline-block;
-    outline: 0;
-    cursor: pointer; }
-  #ddmenu .dropdown {
-    width: auto;
-    left: 0px;
-    padding: 0;
-    margin: 0;
-    display: none;
+    font-size: 11px;
+    padding: 13px 9.5px;
+    width: 100%; }
+    #ddmenu .dd_item a {
+      color: #000;
+      padding: 4px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+      #ddmenu .dd_item a:hover {
+        color: #ff0000; }
+  #ddmenu .dd_ul_cont {
     position: absolute;
-    overflow: hidden;
-    top: 100%; }
-  #ddmenu .full-width .dropdown {
-    width: 100%;
-    padding: 0;
-    margin: 0; }
-  #ddmenu .right-aligned {
-    left: auto;
-    right: 0px; }
-  #ddmenu .over .dropdown {
-    display: block; }
-  #ddmenu .dd-inner {
-    text-align: center;
-    background-color: #FFF;
-    white-space: nowrap;
-    font-size: 13px; }
-  #ddmenu ul ul {
-    margin: 0;
-    text-align: left;
-    width: auto;
-    display: block;
-    position: static;
-    border: none;
-    padding-top: 25px;
-    padding-bottom: 15px; }
-    #ddmenu ul ul li {
-      margin: 0;
-      display: block;
-      position: static; }
-  #ddmenu .dropdown a {
-    line-height: 1;
-    text-decoration: none; }
-    #ddmenu .dropdown a:hover, #ddmenu .dropdown a:focus {
-      text-decoration: none; }
-  #ddmenu .column {
-    text-align: left;
-    vertical-align: top;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    white-space: normal;
-    width: auto;
-    min-width: 200px; }
-  #ddmenu .dd-inner ul:last-child {
-    border-right: none; }
-  #ddmenu div.column h3 {
-    text-transform: uppercase; }
-
-#ddmenuLink, #ddmenu .menu-icon {
-  display: none; }
-
-@media only screen and (max-width: 480px) {
-  #ddmenu .column.mayHide {
-    display: none; }
-  #ddmenu ul {
-    width: 100%;
+    width: 100vw;
+    background: rgba(20, 20, 20, 0.9);
+    height: auto;
+    top: 100%;
     display: none;
-    border-radius: 0; }
-  #ddmenu li {
-    position: relative;
-    display: block;
-    font-size: 20px;
-    text-align: left; }
-  #ddmenu .full-width {
-    position: relative; }
-  #ddmenu .dropdown {
-    position: relative;
-    *top: auto;
-    border: none;
-    border-radius: 0;
-    box-shadow: none; }
-  #ddmenu .offset300 {
-    left: 0; }
-  #ddmenu .full-width .dropdown {
-    width: auto; }
-  #ddmenu .dd-inner {
-    margin: 0;
-    background: none;
-    text-align: left; }
-  #ddmenu .column {
-    width: auto;
-    padding: 0;
-    border: none;
-    display: block; }
-  #ddmenu .menu-icon {
-    font-size: 32px;
-    display: block;
-    position: relative;
-    width: 40px;
-    height: 36px;
-    text-align: center;
-    cursor: pointer;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    background-color: #eee;
-    border-radius: 3px;
-    margin-bottom: 6px;
-    margin-left: auto;
-    margin-right: 11px; }
-    #ddmenu .menu-icon::before {
-      content: "";
-      position: absolute;
-      top: 0.25em;
-      left: 4px;
-      width: 1em;
-      height: 0.125em;
-      border-top: 0.375em double #333;
-      border-bottom: 0.125em solid #333;
-      box-sizing: content-box; }
-  #ddmenu .menu-icon-active {
-    background-color: #333; }
-    #ddmenu .menu-icon-active::before {
-      border-color: #eee; } }
+    list-style: none; }
+    #ddmenu .dd_ul_cont #colection li ul li:first-child {
+      font-size: 14px;
+      padding-bottom: 4px; }
+    #ddmenu .dd_ul_cont #colection li ul li a {
+      padding: 4px;
+      font-size: 90%;
+      color: #AEAAA9; }
+  #ddmenu .div_cont {
+    text-align: center; }
+    #ddmenu .div_cont > li {
+      display: inline-block;
+      color: red;
+      line-height: 23px;
+      text-align: left; }
+      #ddmenu .div_cont > li ul {
+        min-width: 120px;
+        padding: 20px 30px;
+        color: #fff; }
+        #ddmenu .div_cont > li ul a {
+          color: #Fff; }
+          #ddmenu .div_cont > li ul a:hover {
+            text-decoration: underline; }
+
+#world_of_daniela {
+  width: 467px;
+  margin: 0 auto;
+  text-align: left; }
+
 #footer {
   background: #000;
   padding: 0px;
