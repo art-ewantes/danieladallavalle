@@ -127,6 +127,12 @@ header {
       display: block;
       position: relative; }
 
+.menu-btn {
+  display: none; }
+
+.more {
+  display: none; }
+
 .stick {
   color: #bbb;
   font-size: 14px;
@@ -193,7 +199,8 @@ header {
         #ddmenu .div_cont > li ul a {
           color: #Fff; }
           #ddmenu .div_cont > li ul a:hover {
-            text-decoration: underline; }
+            text-decoration: underline;
+            color: #Fff; }
 
 #world_of_daniela {
   width: 467px;
