@@ -232,3 +232,16 @@ $(document).ready(function(){
   
  });
 //ddmnu_sub_menu_collection
+//masnry
+$(document).ready(function() {
+  var $container = $(".masonry-container");
+  $container.imagesLoaded(function () {
+    $container.masonry({
+      columnWidth: ".item",
+      itemSelector: ".item"
+    });
+    $(".item").imagefill();
+  });
+}); 
+//masnry
+

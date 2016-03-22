@@ -435,3 +435,9 @@ header {
   border-top: 1px solid #000;
   display: block;
   padding-bottom: 30px; }
+
+#content.d_me .masonry-container {
+  padding: 0;
+  width: 100%; }
+  #content.d_me .masonry-container .item {
+    height: 600px; }
