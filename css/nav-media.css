@@ -32,7 +32,8 @@
     cursor: pointer;
     position: absolute;
     width: 100%;
-    display: inline-block; }
+    display: inline-block;
+    height: 0; }
     .more .fa {
       float: right;
       padding-right: 20px;
@@ -50,10 +51,14 @@
 
   #ddmenu {
     height: auto; }
+    #ddmenu .dd_item.lang_menu {
+      display: block; }
+      #ddmenu .dd_item.lang_menu .active {
+        background-color: #ccc; }
     #ddmenu .dd_item {
       line-height: 1;
       display: block;
-      padding: 15px 0;
+      padding: 0;
       text-align: left;
       text-transform: uppercase;
       padding-left: 0px;
@@ -62,8 +67,56 @@
       #ddmenu .dd_item > a {
         font-size: 16px;
         letter-spacing: 0.072em;
-        padding: 0 20px; }
+        padding: 16px 20px;
+        width: 100%;
+        display: block; }
+        #ddmenu .dd_item > a:hover {
+          color: #000; }
       #ddmenu .dd_item .dd_ul_cont {
         position: relative;
-        display: block;
-        height: auto !important; } }
+        background: none; }
+        #ddmenu .dd_item .dd_ul_cont .div_cont {
+          text-align: left; }
+          #ddmenu .dd_item .dd_ul_cont .div_cont > li {
+            display: block;
+            font-size: 16px;
+            letter-spacing: 0.072em;
+            width: 100%;
+            display: block;
+            color: #555; }
+            #ddmenu .dd_item .dd_ul_cont .div_cont > li ul {
+              padding: 0;
+              color: #000; }
+              #ddmenu .dd_item .dd_ul_cont .div_cont > li ul li a {
+                color: #555;
+                width: 100%;
+                display: block;
+                padding: 16px 40px; }
+                #ddmenu .dd_item .dd_ul_cont .div_cont > li ul li a:hover {
+                  text-decoration: none;
+                  color: #555; }
+      #ddmenu .dd_item #colection li ul li {
+        display: none;
+        color: #999999;
+        font-size: 13px;
+        padding-left: 50px;
+        background-color: #f4f4f4; }
+        #ddmenu .dd_item #colection li ul li:first-child {
+          font-size: 16px;
+          padding: 13px 40px;
+          display: block;
+          color: #555;
+          background: url("../images/shadow-menu-brand.png") center top no-repeat #FFF; }
+      #ddmenu .dd_item #colection li ul li.colection_title + li {
+        font-size: 13px;
+        color: #555;
+        padding-left: 40px; }
+      #ddmenu .dd_item #colection li ul.sub_menu_open li {
+        display: block; }
+        #ddmenu .dd_item #colection li ul.sub_menu_open li a {
+          padding: 4px;
+          font-size: 90%;
+          color: #AEAAA9; }
+
+  #world_of_daniela {
+    width: 100%; } }

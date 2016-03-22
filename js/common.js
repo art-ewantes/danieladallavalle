@@ -160,16 +160,42 @@ $(window).resize(function(){
 $(document).ready(function(){
     
   $('nav.navbar>#ddmenu>li').hover(function () {
-     clearTimeout($.data(this,'timer'));
+     if ($( "#navbarr" ).hasClass( "navbar" )) {
+      clearTimeout($.data(this,'timer'));
      $('ul',this).stop(true,true).slideDown(200);
+     };
+
+  
   }, function () {
+         if ($( "#navbarr" ).hasClass( "navbar" )) {
     $.data(this,'timer', setTimeout($.proxy(function() {
       $('ul',this).stop(true,true).slideUp(200);
     }, this), 100));
+       };
   });
 
 });
+$(document).ready(function(){
+    
+  $('nav>#ddmenu>li a').click(function () {
+     var path = $(this).parent()
+    $(path).toggleClass("sub_menu_open");
+
+     if ($( "#navbarr" ).hasClass( "menu-open" )) {
+       if ($( path ).hasClass( "sub_menu_open" )) {
+
+      clearTimeout($.data(path,'timer'));
+     $('ul',path).stop(true,true).slideDown(200);
+     } else{
+                $.data(path,'timer', setTimeout($.proxy(function() {
+      $('ul',path).stop(true,true).slideUp(200);
+    }, path), 100));
+      }
+      } ;
+});
+});
 //ddmenu begin
+
 //ddmeny media btn
  $(document).ready(function(){
  $("#ddmenu li a").each(function() {
@@ -179,9 +205,7 @@ $(document).ready(function(){
  })
  var menux = $('#ddmenu li a.parent');
  $( '<div class="more"><i class="fa fa-angle-down"></i></div>' ).insertBefore(menux);
- $('.more').click(function(){
-   $(this).parent('li').toggleClass('open');
- });
+
  $('.menu-btn').click(function(){
    $('nav').toggleClass('menu-open');
    $('nav').toggleClass('navbar');
@@ -197,3 +221,14 @@ $(document).ready(function(){
         });
 
 //ddmeny media btn
+
+//ddmnu_sub_menu_collection
+$(document).ready(function(){
+  $(".colection_title").click(function()
+  {
+    var sub_path = $(this).parent();
+   $(sub_path).toggleClass("sub_menu_open");
+  });
+  
+ });
+//ddmnu_sub_menu_collection

@@ -152,6 +152,8 @@ header {
   cursor: pointer;
   outline: none;
   text-align: center; }
+  #ddmenu .dd_item.lang_menu {
+    display: none; }
   #ddmenu .dd_item {
     display: inline;
     position: relative;

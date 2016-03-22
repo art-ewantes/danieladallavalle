@@ -34,6 +34,7 @@
 		position: absolute
 		width: 100%
 		display: inline-block
+		height: 0
 		.fa
 			float: right
 			padding-right: 20px
@@ -48,10 +49,15 @@
 		max-height: 2000px
 	#ddmenu
 		height: auto
+		.dd_item.lang_menu
+			display: block
+			.active
+				background-color: #ccc
+
 		.dd_item
 			line-height: 1
 			display: block
-			padding: 15px 0
+			padding: 0
 			text-align: left
 			text-transform: uppercase
 			padding-left: 0px
@@ -60,11 +66,67 @@
 			>a
 				font-size: 16px
 				letter-spacing: 0.072em
-				padding: 0 20px
+				padding: 16px 20px
+				width: 100%
+				display: block
+				&:hover
+					color: #000
 			.dd_ul_cont
 				position: relative
-				display: block
-				height: auto !important
+				background: none
+				.div_cont
+					text-align: left
+					>li
+						display: block
+						font-size: 16px
+						letter-spacing: 0.072em
+						width: 100%
+						display: block
+						color: #555
+						ul
+							min-width:none
+							padding: 0
+							color: #000
+							li
 
+								a
+									color: #555
+									width: 100%
+									display: block
+									padding: 16px 40px
+									&:hover
+										text-decoration: none
+										color: #555
+			#colection
+				li
+					ul
+						li
+							display: none
+							color: #999999
+							font-size: 13px
+							padding-left: 50px
+							background-color: #f4f4f4
+							&:first-child
+								font-size: 16px 
+								padding: 13px 40px
+								display: block
+								color: #555
+								background: url("../images/shadow-menu-brand.png") center top no-repeat #FFF
+						li.colection_title+li
+							font-size: 13px
+							color: #555
+							padding-left: 40px
+					ul.sub_menu_open
+						li
+							display: block
 
-		
+							a
+								padding: 4px 
+								font-size: 90%
+								color: #AEAAA9 			
+		.dd_item.sub_menu_open
+
+			.dd_ul_cont
+	#world_of_daniela
+		width: 100%
+	
