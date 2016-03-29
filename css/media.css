@@ -11,10 +11,15 @@
 @media only screen and (max-width: 1024px) {
   .stick {
     display: none; }
-
+	.header_social{
+		display: none;
+	}
+	.header_bar .header_logo img{
+		height: 60px;
+	}
   .menu-btn {
     display: block;
-    background: #fff;
+		background: rgba(255, 255, 255, 0.85);
     text-align: center;
     cursor: pointer; }
     .menu-btn .fa-bars {
@@ -129,7 +134,29 @@
           color: #AEAAA9; }
 
   #world_of_daniela {
-    width: 100%; } }
+    width: 100%; 
+  } 
+
+	/*world of daniella begin*/
+	.d_text_area 	.cont_for_title_pic img{
+		height: 40px;
+		width: auto;
+		margin: 15px 0px;
+		padding: 0;
+	}
+	#content.world_of_daniella .masonry-container .item{
+		height: 275px !important;
+	}
+	.d_text_area .cont_for_text p{
+		width: 90%;
+		text-align: justify;
+		font-family: "GibsonLight";
+		font-size: 16px;
+		line-height: 1.6em;
+	}
+	/*world of daniella ebd*/
+
+  }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -144,6 +171,15 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+		.owl-controls .owl-nav{
+			top: 40%;
+		}
+		.owl-controls .owl-dots{
+			bottom: -10%;
+		}
+		#content.world_of_daniella .masonry-container .item{
+		height: 100px !important;
+	}
 /*footer*/
 	.footer-bar .widget, .footer-bar .company {
 			width: 100% !important;

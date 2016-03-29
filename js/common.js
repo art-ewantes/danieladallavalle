@@ -237,11 +237,61 @@ $(document).ready(function() {
   var $container = $(".masonry-container");
   $container.imagesLoaded(function () {
     $container.masonry({
-      columnWidth: ".item",
-      itemSelector: ".item"
+      itemSelector: ".item",
+      columnWidth: ".item"
     });
+
     $(".item").imagefill();
   });
 }); 
+// $('.masonry-container').masonry({
+//   itemSelector: '.item',
+//   // set columnWidth a fraction of the container width
+//   columnWidth: function( containerWidth ) {
+//     return containerWidth / 5;
+//   }
+// });
+
 //masnry
 
+//owl_carousel
+$(document).ready(function() {
+$('.owl-carousel').owlCarousel({
+   autoplay:true,
+    loop:true,
+    autoplayTimeout:6000,
+    dots: true,
+      nav:true,
+    responsive:{
+        0:{
+            items:1,
+             stagePadding:0
+        },
+        600:{
+            items:1,
+             stagePadding:0
+        },
+        840:{
+         items:1,
+            stagePadding:0
+        },
+        900:{
+         items:1,
+            stagePadding:110
+        },
+        1000:{
+            items:1,
+            stagePadding:140
+        },
+        1200:{
+            items:1,
+            stagePadding:263
+        },
+        1900:{
+            items:3
+            
+        }     
+    }
+})
+
+})

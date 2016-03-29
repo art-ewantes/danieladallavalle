@@ -13,3 +13,8 @@
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/GibsonLight/GibsonLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GibsonLight/GibsonLight.woff") format("woff"), url("../fonts/GibsonLight/GibsonLight.ttf") format("truetype"); }
+@font-face {
+  font-family: "Slick";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Slick/Slick.eot?#iefix") format("embedded-opentype"), url("../fonts/Slick/Slick.woff") format("woff"), url("../fonts/Slick/Slick.ttf") format("truetype"); }
