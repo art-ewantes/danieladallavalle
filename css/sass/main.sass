@@ -202,10 +202,15 @@ header
 					&:hover
 						text-decoration: underline
 						color: #Fff
+
 #world_of_daniela
 	width: 467px
 	margin: 0 auto
 	text-align: left
+	.div_cont
+	text-align: center
+	>li
+		float: left	
 
 //menu end
 //header end
@@ -224,7 +229,6 @@ header
 	letter-spacing: 1px
 	top: 15px
 	z-index: 1
-	margin-top: 100px
 .go-to-top
 	a:hover
 		opacity: .5
@@ -551,6 +555,8 @@ header
 //dme
 //contact beg
 .contact_form
+	font-family: "GibsonLight"
+	padding: 20px
 	background-color: #F6f6f6
 	.contact_adres
 		.contact_adres_cont
@@ -563,5 +569,39 @@ header
 				&:first-child
 					font-weight: bold
 					padding-bottom: 10px	
-
+	form
+		padding-top: 20px
+	.form-control
+		width: 100%
+		border: 1px solid #ccc
+		margin-bottom: 20px
+		padding: 10px
+		&::-webkit-input-placeholder
+			color: #000
+			opacity: 1
+		&:-moz-placeholder
+			color: #000
+			opacity: 1
+		&::-moz-placeholder
+			color: #000
+			opacity: 1
+		&:-ms-input-placeholder
+			color: #000
+			opacity: 1
+.radio
+	display: inline-block
+	margin-right: 30px
+	margin-bottom: 30px
+.text_area_form
+	min-height: 150px
+.btn_form
+	width: 27%
+	margin-top: 50px
+	background-color: #555
+	border: 1px solid #555
+	font-size: 16px
+	float: right
+	color: #fff
+	padding: 6px 12px
+	text-transform: uppercase
 //contact end

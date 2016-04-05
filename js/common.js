@@ -233,17 +233,7 @@ $(document).ready(function(){
  });
 //ddmnu_sub_menu_collection
 //masnry
-$(document).ready(function() {
-  var $container = $(".masonry-container");
-  $container.imagesLoaded(function () {
-    $container.masonry({
-      itemSelector: ".item",
-      columnWidth: ".item"
-    });
 
-    $(".item").imagefill();
-  });
-}); 
 // $('.masonry-container').masonry({
 //   itemSelector: '.item',
 //   // set columnWidth a fraction of the container width
@@ -295,3 +285,14 @@ $('.owl-carousel').owlCarousel({
 })
 
 })
+$(document).ready(function() {
+  var $container = $(".masonry-container");
+  $container.imagesLoaded(function () {
+    $container.masonry({
+      itemSelector: ".item",
+      columnWidth: ".item"
+    });
+
+    $(".item").imagefill();
+  });
+}); 

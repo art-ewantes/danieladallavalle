@@ -207,7 +207,10 @@ header {
 #world_of_daniela {
   width: 467px;
   margin: 0 auto;
-  text-align: left; }
+  text-align: left;
+  text-align: center; }
+  #world_of_daniela > li {
+    float: left; }
 
 #footer {
   background: #000;
@@ -222,8 +225,7 @@ header {
   text-align: center;
   letter-spacing: 1px;
   top: 15px;
-  z-index: 1;
-  margin-top: 100px; }
+  z-index: 1; }
 
 .go-to-top a:hover {
   opacity: 0.5; }
@@ -540,6 +542,8 @@ header {
   width: 11px; }
 
 .contact_form {
+  font-family: "GibsonLight";
+  padding: 20px;
   background-color: #F6f6f6; }
   .contact_form .contact_adres .contact_adres_cont {
     width: 50%;
@@ -551,3 +555,41 @@ header {
       .contact_form .contact_adres .contact_adres_cont p:first-child {
         font-weight: bold;
         padding-bottom: 10px; }
+  .contact_form form {
+    padding-top: 20px; }
+  .contact_form .form-control {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px; }
+    .contact_form .form-control::-webkit-input-placeholder {
+      color: #000;
+      opacity: 1; }
+    .contact_form .form-control:-moz-placeholder {
+      color: #000;
+      opacity: 1; }
+    .contact_form .form-control::-moz-placeholder {
+      color: #000;
+      opacity: 1; }
+    .contact_form .form-control:-ms-input-placeholder {
+      color: #000;
+      opacity: 1; }
+
+.radio {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px; }
+
+.text_area_form {
+  min-height: 150px; }
+
+.btn_form {
+  width: 27%;
+  margin-top: 50px;
+  background-color: #555;
+  border: 1px solid #555;
+  font-size: 16px;
+  float: right;
+  color: #fff;
+  padding: 6px 12px;
+  text-transform: uppercase; }
