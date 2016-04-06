@@ -208,9 +208,9 @@ header
 	margin: 0 auto
 	text-align: left
 	.div_cont
-	text-align: center
-	>li
-		float: left	
+		text-align: center
+		>li
+			float: left	
 
 //menu end
 //header end
@@ -294,8 +294,6 @@ header
 .footer-nav-menu
 	li:first-child 
 		margin-left: 0%
-.footer-nav-menu
-	.fix-height
 
 .footer-nav-menu
 	.fix_color
@@ -455,7 +453,7 @@ header
 //footer end
 //dme
 #content.world_of_daniella
-	.masonry-container
+	.masonry-container-world
 		padding: 0
 		width: 100%
 		.item
@@ -605,3 +603,150 @@ header
 	padding: 6px 12px
 	text-transform: uppercase
 //contact end
+//home_page_begib
+
+.masonry-container-home
+	padding: 0
+	.item.item_small:not(.cite)
+		height: 224px
+		span
+			font-size: 25px
+			letter-spacing: 0.1em
+	.item.item_big
+		height: 384px
+	.item.item_big.cite
+		height: 224px	
+	.item img 
+		width: 100%
+		-webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+		-moz-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+		-ms-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+		-o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+		transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+	.item:not(.cite)
+		background: #3e3e3e
+		padding: 0
+		span
+			font-size: 35px
+			display: block
+			text-transform: uppercase
+			padding: 10px
+			position: absolute
+			bottom: 0%
+			font-family: 'GibsonLight'
+			background: #000
+			color: #fff
+			margin: 10px
+			-webkit-transition: all .3s ease-in-out
+			-moz-transition: all .3s ease-in-out
+			-ms-transition: all .3s ease-in-out
+			-o-transition: all .3s ease-in-out
+			transition: all .3s ease-in-out
+			padding-left: 9px
+			i
+				font-size: 20px
+				padding-left: 9px
+				vertical-align: 5px
+		&:hover
+			img
+				-webkit-transform: matrix3d(1.06, 0, 0, 0, 0, 1.06, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0.998) 
+				-moz-transform: matrix3d(1.06, 0, 0, 0, 0, 1.06, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0.998) 
+				filter: alpha(opacity=50)
+				opacity: 0.5
+				-webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+				-moz-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+				-ms-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+				-o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+				transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+			span
+				background: #ff0000	
+	.cite
+		padding: 0
+		height: 224px	
+		img
+			z-index: -2
+		.outer-center
+			max-height: 100%
+			width: 100%
+			display: table
+			height: 100%
+			margin: 0 auto
+			.middle-center
+				max-height: 100%
+				width: 100%
+				display: table-cell
+				vertical-align: middle
+				.inner-center
+					max-height: 100%
+					width: 100%	
+					blockquote
+						margin: 0
+						font-size: 42px
+						font-family: Georgia, serif
+						color: #000
+						text-align: center
+						&::before
+							color: #000
+							font-size: 1.1em
+							line-height: 0.1em
+							margin-right: 0.35em
+							vertical-align: -0.2em
+							content: "\201C"
+						&::after
+							color: #000
+							content: open-quote
+							font-size: 1.1em
+							line-height: 0.1em
+							margin-left: 0.25em
+							vertical-align: -0.5em
+							content: "\201D"
+
+						p
+							display: inline
+							font-family: 'DancingScript', cursive 
+							font-weight: 400
+							margin: 0 	
+							padding: 0 	
+							img
+								width: auto !important
+								height: auto  !important 
+								position: relative !important
+								top: 0 !important
+								left: 0 !important
+
+	.item_small
+
+		img
+		.outer-center
+			.middle-center
+				.inner-center
+					blockquote
+						font-size: 25px
+						letter-spacing: 0.10em
+						&::before
+							color: #000
+							font-size: 1.1em
+							line-height: 0.1em
+							margin-right: 0.35em
+							vertical-align: -0.2em
+							content: "\201C"
+						&::after
+							color: #000
+							content: open-quote
+							font-size: 1.1em
+							line-height: 0.1em
+							margin-left: 0.25em
+							vertical-align: -0.5em
+							content: "\201D"
+
+						p
+							display: inline
+							font-family: 'DancingScript', cursive 
+							font-weight: 400
+							img
+								width: auto !important
+								height: auto  !important 
+								position: relative !important
+								top: 0 !important
+
+//home_page_end

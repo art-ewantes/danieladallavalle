@@ -18,3 +18,8 @@
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/Slick/Slick.eot?#iefix") format("embedded-opentype"), url("../fonts/Slick/Slick.woff") format("woff"), url("../fonts/Slick/Slick.ttf") format("truetype"); }
+@font-face {
+  font-family: "DancingScript";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/DancingScript/DancingScript.eot?#iefix") format("embedded-opentype"), url("../fonts/DancingScript/DancingScript.woff") format("woff"), url("../fonts/DancingScript/DancingScript.ttf") format("truetype"); }

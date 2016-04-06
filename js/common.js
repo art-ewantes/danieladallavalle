@@ -286,13 +286,24 @@ $('.owl-carousel').owlCarousel({
 
 })
 $(document).ready(function() {
-  var $container = $(".masonry-container");
-  $container.imagesLoaded(function () {
-    $container.masonry({
+   $(".masonry-container-home").imagesLoaded(function () {
+     $(".masonry-container-home").masonry({
       itemSelector: ".item",
-      columnWidth: ".item"
+      columnWidth: ".item_small",
+        percentPosition: true
     });
 
-    $(".item").imagefill();
+     $(".item").imagefill();
+  });
+}); 
+$(document).ready(function() {
+   $(".masonry-container-world").imagesLoaded(function () {
+     $(".masonry-container-world").masonry({
+      itemSelector: ".item",
+      columnWidth: ".item",
+      
+    });
+
+     $(".item").imagefill();
   });
 }); 
